@@ -6,7 +6,7 @@ class Services {
     }
 
     async pegaTodosOsRegistros() {
-        return database[this.nomeDoModelo].findAll()
+        return database[this.nomeDoModelo].findAll({wheere: {...where}})
     }
 
     async pegaumRegistro(id){
